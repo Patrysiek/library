@@ -2,17 +2,18 @@ package com.library.layer.presentation;
 
 
 import org.springframework.http.MediaType;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
-import com.library.layer.entities.Book;
+import com.library.layer.entities.Author;
 
-public interface BookEndpoint {
+public interface AuthorEndpoint {
 	
 	@RequestMapping(
 			consumes = MediaType.APPLICATION_JSON_VALUE,
 			path = "/add",
 			method = RequestMethod.PUT
 			)
-	void addBook(Book book);
+	void addAuthor(@RequestBody Author author);
 }

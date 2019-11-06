@@ -17,14 +17,14 @@ import lombok.Getter;
 import lombok.Setter;
 
 @Entity
-@Table(name = "Author")
+@Table(name = "author")
 @Getter
 @Setter
 public class Author {
 
 	@Id
-	@GeneratedValue(strategy = GenerationType.SEQUENCE)
 	@Column(name = "author_id")
+	@GeneratedValue(strategy = GenerationType.SEQUENCE)
 	private long id;
 	private String name;
 	private String surname;

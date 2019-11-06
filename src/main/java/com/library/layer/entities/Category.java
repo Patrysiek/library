@@ -14,12 +14,11 @@ import lombok.Getter;
 import lombok.Setter;
 
 @Entity
-@Table(name = "Category")
+@Table(name = "category")
 @Getter
 @Setter
 public class Category {
 	@Id
-	@GeneratedValue(strategy = GenerationType.SEQUENCE)
 	@Column(name = "category_id")
 	private long id;
 	

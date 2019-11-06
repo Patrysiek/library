@@ -23,7 +23,6 @@ import lombok.Setter;
 public class Book {
 
 	@Id
-	@GeneratedValue(strategy = GenerationType.SEQUENCE)
 	@Column(name = "book_id")
 	private long id;
 	private String title;

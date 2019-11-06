@@ -6,7 +6,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 
 public interface CategoryEndpoint {
 	@RequestMapping(
-			path = "/category/add",
+			path = "/add",
 			method = RequestMethod.PUT
 			)
 	void addBook(String category);
