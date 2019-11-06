@@ -18,7 +18,6 @@ import lombok.Setter;
 @Table(name = "User")
 @Getter
 @Setter
-
 public class User {
 
 	@Id

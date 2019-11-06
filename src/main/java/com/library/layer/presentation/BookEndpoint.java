@@ -1,4 +1,4 @@
-package com.library.layer.service;
+package com.library.layer.presentation;
 
 
 import org.springframework.http.MediaType;
@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import com.library.layer.entities.Author;
 import com.library.layer.entities.Category;
 
-public interface BookService {
+public interface BookEndpoint {
 	
 	@RequestMapping(
 			consumes = MediaType.APPLICATION_JSON_VALUE,

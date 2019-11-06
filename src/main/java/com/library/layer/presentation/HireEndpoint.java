@@ -1,4 +1,4 @@
-package com.library.layer.service;
+package com.library.layer.presentation;
 
 import java.util.Date;
 
@@ -12,7 +12,7 @@ import com.library.layer.request_entities.AuthorRequest;
 import com.library.layer.request_entities.BookRequest;
 import com.library.layer.request_entities.UserRequest;
 
-public interface HireService {
+public interface HireEndpoint {
 
 	@RequestMapping(consumes = MediaType.APPLICATION_JSON_VALUE, path = "/hire", method = RequestMethod.POST)
 	void hireBook(@NotNull AuthorRequest author, @NotNull BookRequest book, @NotNull UserRequest user,
