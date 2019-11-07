@@ -2,7 +2,6 @@ package com.library.layer.services;
 
 import java.util.List;
 
-import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -16,8 +15,8 @@ public class AuthorService {
 
 	public void save(Author author) {
 		Author a = authorDAO.save(author);
-		
 	}
+	
 
 	public void deleteById(Long id) {
 		authorDAO.deleteById(id);
@@ -25,6 +24,10 @@ public class AuthorService {
 	public Author findById(Long id) {
 		Author author = authorDAO.findById(id).get();
 		return author;
+	}
+	
+	public Author getAuthorByName(String name) {
+		return authorDAO.findByName(name);
 	}
 	public List<Author> findAll() {
 		return authorDAO.findAll();
